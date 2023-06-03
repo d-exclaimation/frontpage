@@ -42,7 +42,7 @@ export default component$(() => {
           {routes.map(({ path, name }, i) => (
             <Link
               href={path}
-              class="w-full -translate-x-40 bg-white px-3 py-2 text-start transition-all hover:bg-zinc-100 hover:!delay-0 data-[isactive]:bg-black data-[isactive]:text-white group-data-[show]:translate-x-0"
+              class="w-full -translate-x-40 border-l-2 border-transparent bg-white px-3 py-2 text-start transition-all hover:bg-black hover:text-white hover:!delay-0 data-[isactive]:border-lime-400 data-[isactive]:bg-black data-[isactive]:text-white group-data-[show]:translate-x-0"
               style={{
                 transitionDelay: `${i * 50}ms`,
               }}
