@@ -24,7 +24,7 @@ export default component$(() => {
         <RouterHead />
       </head>
       <body
-        class="flex min-h-screen min-w-[100vw] flex-col items-center justify-start bg-zinc-50"
+        class="flex min-h-screen min-w-[100vw] flex-col items-center justify-start bg-white"
         lang="en"
       >
         <RouterOutlet />

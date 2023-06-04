@@ -20,12 +20,12 @@ export const useNews = routeLoader$(async (ev) => {
 export default component$(() => {
   const data = useNews();
   return (
-    <div class="my-3 flex w-[95%] flex-col items-center gap-1">
-      {data.value.news.map(({ id, title }) => (
-        <div class="flex min-h-[4rem] w-full rounded-sm bg-white px-3 py-4 shadow">
-          {title}
-        </div>
-      ))}
+    <div class="my-3 grid w-[95%] grid-cols-3 place-items-center gap-1 bg-white">
+      {data.value.news.map(
+        ({ id, title, user, type, comment_count, time_ago, points }) => {
+          return <div>{time_ago}</div>;
+        }
+      )}
     </div>
   );
 });

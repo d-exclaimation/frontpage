@@ -46,16 +46,9 @@ export default component$(() => {
   });
 
   return (
-    <>
-      <nav class="fixed bottom-5 left-5 z-50 flex flex-col-reverse items-start justify-center gap-3">
-        <NavMenu show={show} />
-        <NavItems activePath={activePath} routes={routes} show={show} />
-      </nav>
-      <button
-        class="fixed inset-0 -z-40 bg-black/50 opacity-0 backdrop-blur-sm transition-opacity data-[show]:z-40 data-[show]:opacity-100 md:bg-black/10"
-        data-show={show.value}
-        onClick$={() => (show.value = false)}
-      />
-    </>
+    <nav class="fixed bottom-5 left-5 z-50 flex flex-col-reverse items-start justify-center gap-3">
+      <NavMenu show={show} />
+      <NavItems routes={routes} show={show} />
+    </nav>
   );
 });
