@@ -9,14 +9,15 @@ export default component$<Props>(({ show }) => {
   return (
     <div class="group relative flex items-center justify-center">
       <div
-        class={tw(`absolute h-10 w-10 bg-lime-400 opacity-0 
-        transition-all group-hover:opacity-100 group-hover:blur-md 
-        group-active:opacity-100 group-active:blur-md 
-        data-[show]:opacity-100 data-[show]:blur-md`)}
+        class={tw(`absolute h-10 w-10 bg-lime-400 
+        opacity-0 transition-all group-hover:opacity-100 
+        group-hover:blur-md group-active:opacity-100 
+        group-active:blur-md data-[show]:opacity-100
+        data-[show]:blur-md`)}
         data-show={show.value}
       />
       <button
-        class="group relative z-[60] flex items-center justify-center overflow-hidden rounded-md bg-white p-2 shadow-xl transition-all data-[show]:bg-black"
+        class="group relative z-[60] flex items-center justify-center overflow-hidden rounded-md bg-white p-2 shadow-xl outline-none transition-all data-[show]:bg-black"
         onClick$={() => (show.value = !show.value)}
         data-show={show.value}
       >
